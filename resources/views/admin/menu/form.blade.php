@@ -1,7 +1,7 @@
 <div class="form-group">
     <label for="nombre" class="col-lg-2 control-label requerido">Nombre</label>
         <div class="col-sm-8">
-            <input type="text" name="nombre" id="nombre" value="{{old('nombre')}}" class="form-control">
+            <input type="text" name="nombre" id="nombre" value="{{old('nombre')}}" class="form-control" required>
         </div>
 </div>
 
@@ -17,4 +17,8 @@
         <div class="col-sm-8">
             <input type="text" name="icono" id="icono" class="form-control" value="{{old('icono')}}">
         </div>
+
+    <div class="col-lg-1">
+    <span id="mostrar-icono" class="fa fa-fw {{old("icono")}}"></span>
+    </div>
 </div>
